@@ -1,0 +1,9 @@
+[Unit]
+Description=A simple startup script
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/default.sh
+
+[Install]
+WantedBy=multi-user.target
