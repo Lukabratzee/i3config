@@ -46,6 +46,9 @@ bindsym $mod+Shift+q kill
 # set lock
 bindsym $mod+shift+x exec betterlockscreen -l dim --off 1800
 
+# set guake
+exec --no-startup-id guake
+
 # set power-manager
 exec_always --no-startup-id xfce4-power-manager
 
@@ -186,6 +189,6 @@ exec /home/luke/.config/i3/default.sh
 # finds out, if available)
 bar {
         # status_command i3status.conf
-        status_command py3status -c /home/luke/.config/i3/i3status.conf
-
+	status_command py3status -c /home/luke/.config/i3/i3status.conf
+	
 }
